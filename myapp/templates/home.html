@@ -1,0 +1,9 @@
+{% extends 'layout/base.html' %}
+{% block title %}QUANLISANPHAM{% endblock %}
+{% block content %}
+{% if current_user.is_authenticated %}
+<h1>đăng nhập thành công</h1>
+{% else %}
+<h1>Chào mừng bạn đến với website</h1>
+{% endif %}
+{% endblock %}
